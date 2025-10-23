@@ -1,0 +1,76 @@
+// Instalar o express
+npm i express@4.19.2
+
+// Instalar o express e a sua tipagem. Importar o express
+npm i --save-dev @types/express@4.17.21
+import express from "express";
+
+// Instalar o typescript e a sua tipagem
+npm i typescript@5.5.4 @types/node@20.14.12 -D
+
+// Instalar o tsx 
+npm i tsx@4.16.2 -D
+
+// Iniciar o tsconfig
+npx tsc --init
+
+// Configurar o tsconfig
+
+// Instalar o express-async-errors
+npm i express-async-errors@3.1.1
+
+// Instalar o Zod
+npm i zod@3.23.8
+
+// Criar estruturas iniciais de controllers e routes -- Testar a conexão
+
+// Verificar container e images do docker com docker ps -a e docker image ls
+
+// Criar Docker Compose
+
+// Executa o Docker Compose
+docker-compose up -d (a flag faz com que o container seja executado em background )
+
+// Testa com beekeeper
+
+// Instala o Prisma ORM
+npm i prisma@5.19.1 -D
+
+// Executa o prisma no projeto
+npx prisma init --datasource-provider postgresql
+
+// Cria a migration para gerar as tabelas com o Prisma
+npx prisma migrate dev
+
+// Executando o prisma studio - parecido com beekeeper
+npx prisma studio
+
+// Instala o bcrypt - hash para senhas
+npm i bcrypt@5.1.1 
+
+// Instalando a tipagem do bcrypt
+npm i --save-dev @types/bcrypt
+
+// Instalando o json web token (JWT)
+npm i jsonwebtoken@9.0.2
+
+// Instalando a tipagem do JWT
+npm i --save-dev @types/jsonwebtoken@9.0.6
+
+// Instalando o Jest para testes automatizados
+npm i jest@29.7.0 @types/jest@29.5.13 ts-jest@29.2.5 -D
+
+// Instalando o supertest
+npm i supertest@7.0.0 @types/supertest@6.0.2 -D
+
+// Inicia o jest 
+npx jest --init (nas perguntas a ordem é: y, y, node, n, v8, y)
+
+// Roda o script do jest (PRECISA DO npm install --save-dev ts-node)
+npm run test:dev
+
+// Fazendo a build da aplicação (transformar de ts para js)
+npm i tsup@8.3.0 -D
+
+// "Carregando" o .env no build/server.js
+node --env-file=.env build/server.js
