@@ -74,3 +74,6 @@ npm i tsup@8.3.0 -D
 
 // "Carregando" o .env no build/server.js
 node --env-file=.env build/server.js
+
+// build comand para a api no render
+npm install && npm run build && npx prisma migrate deploy
