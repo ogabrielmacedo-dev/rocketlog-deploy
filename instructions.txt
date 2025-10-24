@@ -77,3 +77,11 @@ node --env-file=.env build/server.js
 
 // build comand para a api no render
 npm install && npm run build && npx prisma migrate deploy
+
+
+
+
+
+
+
+////////// no package.json antes tinha no script start o --env-file=.env
